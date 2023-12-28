@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Test Javascript</title>
+
+	<link href="src/CustomAlerts.min.css" rel="stylesheet" />
+	<script src="src/CustomAlerts.min.js"></script>
+
+	<script type="text/javascript">
+		
+		function showClicked() {
+
+			//alert("Hello Javascript");
+
+			let alerts = new CustomAlerts({
+    // options here
+			});
+			alerts.alert({
+  			title: 'Default Alert',
+  			content: 'Hello World!',
+			})
+		}
+
+	</script>
+</head>
+	<body>
+		<center>
+		<button type="button" onclick="showClicked()">Show Alert</button>
+		</center>
+	</body>
+</html>
